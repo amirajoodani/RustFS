@@ -10,7 +10,8 @@ RustFS is an open-source object storage server written in **Rust**. It provides 
 > **Add an architecture image here:**  
 > You can replace the placeholder below with a RustFS architecture diagram or screenshot.
 
-![RustFS Architecture](https://via.placeholder.com/900x400.png?text=RustFS+Object+Storage+Architecture)
+<img width="1080" height="806" alt="architecture_design_852f73b2c8" src="https://github.com/user-attachments/assets/cf8c7daf-fb24-4b48-acfa-0698957e2a9d" /> <br>
+
 
 ## How RustFS Works
 
