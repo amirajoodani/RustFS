@@ -44,7 +44,8 @@ Each stored object consists of:
 Unlike traditional file systems, object storage uses a flat namespace instead of folders, making it highly scalable.
 
 
-**JBOD (Just a Bunch Of Disks)** is a storage configuration where multiple physical disks are used **independently** rather than combined into a RAID array. In Linux, each disk is treated as its own separate storage device unless you explicitly combine them with tools like LVM or `mdadm`.
+## JBOD (Just a Bunch Of Disks)
+is a storage configuration where multiple physical disks are used **independently** rather than combined into a RAID array. In Linux, each disk is treated as its own separate storage device unless you explicitly combine them with tools like LVM or `mdadm`.
 
 ## How JBOD Works
 
