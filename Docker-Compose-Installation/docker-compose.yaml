@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  rustfs:
+    image: rustfs/rustfs:latest
+    container_name: rustfs_container
+    restart: unless-stopped
+
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+    environment:
+      RUSTFS_ACCESS_KEY: rustfsadmin
+      RUSTFS_SECRET_KEY: rustfsadmin
+      RUSTFS_CONSOLE_ENABLE: "true"
+      RUSTFS_SERVER_DOMAINS: example.com
+
+    volumes:
+      - /mnt/rustfs/data:/data
+      - /mnt/rustfs/logs:/logs
+
+    command:
+      - --address
+      - ":9000"
+      - --console-enable
+      - --server-domains
+      - example.com
+      - --access-key
+      - rustfsadmin
+      - --secret-key
+      - rustfsadmin
+      - /data
